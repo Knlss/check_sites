@@ -42,7 +42,7 @@ class CreateElement:
             frame.place(anchor=anchor, relx=relx, rely=rely)
             return frame
 
-    def create_input(self, father, width, anchor, relx, rely, bg, fg, font, cursor, relwidth=None):
+    def create_entry(self, father, width, anchor, relx, rely, bg, fg, font, cursor, relwidth=None):
         if relwidth != None:
             frame = tk.Entry(father, bg=bg, fg=fg, font=font, cursor=cursor)
             frame.place(anchor=anchor, relx=relx, rely=rely, relwidth=relwidth)
